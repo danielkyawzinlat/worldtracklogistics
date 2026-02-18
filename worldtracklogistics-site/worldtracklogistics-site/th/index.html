@@ -1,0 +1,79 @@
+
+<!doctype html><html lang="th"><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>World Track Logistics | ขนส่ง ระหว่างประเทศ และพิธีการศุลกากร</title>
+<meta name='description' content='โซลูชันโลจิสติกส์ครบวงจร ทางเรือ อากาศ บก และศุลกากร พร้อมอัตราที่แข่งขันได้'>
+<link rel='canonical' href='https://www.worldtracklogistics.com/th/'>
+<link rel='alternate' href='/en/' hreflang='en'>
+<link rel='alternate' href='/zh/' hreflang='zh-cn'>
+<link rel='alternate' href='/th/' hreflang='th'>
+<link rel='stylesheet' href='/css/theme.css'>
+<link rel='manifest' href='/manifest.webmanifest'>
+<link rel='icon' type='image/png' sizes='32x32' href='/assets/icons/favicon-32.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='/assets/icons/favicon-16.png'>
+<link rel='apple-touch-icon' href='/assets/icons/apple-touch-icon.png'>
+<meta name='theme-color' content='#C46F2C'>
+</head><body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="/th/"><img src="/assets/images/logo.jpg" alt="WTL logo"></a>
+      <a class="name" href="/th/">World Track Logistics</a>
+    </div>
+    <nav>
+      <a href="/th/">หน้าหลัก</a>
+      <a href="/th/services.html">บริการ</a>
+      <a href="/th/solutions.html">โซลูชัน</a>
+      <a href="/th/about.html">เกี่ยวกับเรา</a>
+      <a href="/th/contact.html">ติดต่อ</a>
+      <span class="lang">
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="zh">中文</a>
+        <a href="#" data-lang="th">ไทย</a>
+      </span>
+    </nav>
+  </div>
+</header>
+<section class='hero'><div class='container wrap'>
+  <div>
+    <div class='kicker'>ตัวแทนขนส่งระหว่างประเทศ</div>
+    <h1>ขนส่งทางเรือ อากาศ และทางบกอย่างมั่นใจ แบบครบวงจร</h1>
+    <p>ตั้งแต่ FCL/LCL ไปจนถึงขนส่งทางอากาศเร่งด่วนและรถบรรทุกแบบ Bonded/Non‑bonded เราออกแบบโซลูชัน Door‑to‑Door ที่เชื่อถือได้พร้อมการสื่อสารเชิงรุก</p>
+    <div class='cta'>
+      <a class='btn primary' href='/th/contact.html'>ขอใบเสนอราคา</a>
+      <a class='btn ghost' href='/th/services.html'>ดูบริการ</a>
+    </div>
+  </div>
+  <div>
+    <img src='/assets/images/logo.jpg' alt='WTL logo'>
+  </div>
+</div></section><section class='section'><div class='container'><div class='grid-3'><div class='card'><h3>ขนส่งทางเรือ</h3><p>FCL / LCL • Buyers’ consolidation • สินค้าพิเศษ/เกินขนาด • Door‑to‑Door</p></div><div class='card'><h3>ขนส่งทางอากาศ</h3><p>ด่วน/ปกติ • Priority & Charter • สินค้าอันตราย • พรีเคลียร์</p></div><div class='card'><h3>ศุลกากรและรถบรรทุก</h3><p>รถบรรทุก Bonded/Non‑bonded • ข้ามแดน BKK–CN–MM • คลังสินค้าและกระจายสินค้า</p></div></div></div></section>
+<section class='section'><div class='container' style='display:grid;grid-template-columns:1fr 1fr;gap:1.4rem'>
+  <div><h2>ทำไมต้อง World Track Logistics</h2><ul><li>ความสัมพันธ์กับสายเรือ/สายการบินเพื่อการกันพื้นที่ช่วงพีค</li><li>ติดตามสถานะโปร่งใสและจัดการปัญหาเชิงรุก</li><li>บริการ Door‑to‑Door รวมศุลกากรและขนส่งปลายทาง</li><li>ผู้ประสานงานเดียวพร้อมความเชี่ยวชาญในภูมิภาค</li></ul></div>
+  <div><h2>อุตสาหกรรมที่ให้บริการ</h2><ul><li>อิเล็กทรอนิกส์และชิ้นส่วน</li><li>แฟชั่นและค้าปลีก</li><li>ชิ้นส่วนยานยนต์</li><li>การแพทย์และอุปกรณ์ป้องกัน</li></ul></div>
+</div></section><footer>
+  <div class="container">
+    <div>© <span id="year">2026</span> World Track Logistics (WTL). "Your World, Our Track".</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const path = location.pathname; // /en/about.html
+  const lang = path.split('/')[1] || 'en';
+  document.querySelectorAll('.lang a').forEach(a=>{
+    if(a.getAttribute('data-lang')===lang){a.classList.add('active');}
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = this.getAttribute('data-lang');
+      const page = path.split('/').pop();
+      const file = (!page || page==='') ? '' : page;
+      const dest = '/' + target + '/' + (file||'');
+      localStorage.setItem('wtl.lang', target);
+      location.href = dest;
+    });
+  });
+  const y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear()}
+})();
+</script>
+</body></html>

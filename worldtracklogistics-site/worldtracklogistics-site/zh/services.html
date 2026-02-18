@@ -1,0 +1,66 @@
+
+<!doctype html><html lang="zh"><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>服务 | World Track Logistics</title>
+<meta name='description' content='海运、空运、卡车运输与清关服务，覆盖亚洲与全球网络。'>
+<link rel='canonical' href='https://www.worldtracklogistics.com/zh/services.html'>
+<link rel='alternate' href='/en/' hreflang='en'>
+<link rel='alternate' href='/zh/' hreflang='zh-cn'>
+<link rel='alternate' href='/th/' hreflang='th'>
+<link rel='stylesheet' href='/css/theme.css'>
+<link rel='manifest' href='/manifest.webmanifest'>
+<link rel='icon' type='image/png' sizes='32x32' href='/assets/icons/favicon-32.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='/assets/icons/favicon-16.png'>
+<link rel='apple-touch-icon' href='/assets/icons/apple-touch-icon.png'>
+<meta name='theme-color' content='#C46F2C'>
+</head><body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="/zh/"><img src="/assets/images/logo.jpg" alt="WTL logo"></a>
+      <a class="name" href="/zh/">World Track Logistics</a>
+    </div>
+    <nav>
+      <a href="/zh/">首页</a>
+      <a href="/zh/services.html">服务</a>
+      <a href="/zh/solutions.html">方案</a>
+      <a href="/zh/about.html">关于我们</a>
+      <a href="/zh/contact.html">联系</a>
+      <span class="lang">
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="zh">中文</a>
+        <a href="#" data-lang="th">ไทย</a>
+      </span>
+    </nav>
+  </div>
+</header>
+<section class='section'><div class='container'>
+  <h1>服务</h1>
+  <h2>核心服务</h2>
+  <ul><li>国际货运代理（空运/海运）</li><li>边境与陆运解决方案</li><li>清关与合规</li><li>保税/非保税卡车（本地/跨省）</li><li>供应链与物流优化</li><li>仓储与配送</li></ul>
+</div></section><footer>
+  <div class="container">
+    <div>© <span id="year">2026</span> World Track Logistics (WTL). "Your World, Our Track".</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const path = location.pathname; // /en/about.html
+  const lang = path.split('/')[1] || 'en';
+  document.querySelectorAll('.lang a').forEach(a=>{
+    if(a.getAttribute('data-lang')===lang){a.classList.add('active');}
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = this.getAttribute('data-lang');
+      const page = path.split('/').pop();
+      const file = (!page || page==='') ? '' : page;
+      const dest = '/' + target + '/' + (file||'');
+      localStorage.setItem('wtl.lang', target);
+      location.href = dest;
+    });
+  });
+  const y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear()}
+})();
+</script>
+</body></html>

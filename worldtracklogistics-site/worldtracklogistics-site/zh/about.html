@@ -1,0 +1,68 @@
+
+<!doctype html><html lang="zh"><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>关于我们 | World Track Logistics</title>
+<meta name='description' content='WTL 集团简介与网络：深圳、上海、中山、仰光、曼谷与雅加达。'>
+<link rel='canonical' href='https://www.worldtracklogistics.com/zh/about.html'>
+<link rel='alternate' href='/en/' hreflang='en'>
+<link rel='alternate' href='/zh/' hreflang='zh-cn'>
+<link rel='alternate' href='/th/' hreflang='th'>
+<link rel='stylesheet' href='/css/theme.css'>
+<link rel='manifest' href='/manifest.webmanifest'>
+<link rel='icon' type='image/png' sizes='32x32' href='/assets/icons/favicon-32.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='/assets/icons/favicon-16.png'>
+<link rel='apple-touch-icon' href='/assets/icons/apple-touch-icon.png'>
+<meta name='theme-color' content='#C46F2C'>
+</head><body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="/zh/"><img src="/assets/images/logo.jpg" alt="WTL logo"></a>
+      <a class="name" href="/zh/">World Track Logistics</a>
+    </div>
+    <nav>
+      <a href="/zh/">首页</a>
+      <a href="/zh/services.html">服务</a>
+      <a href="/zh/solutions.html">方案</a>
+      <a href="/zh/about.html">关于我们</a>
+      <a href="/zh/contact.html">联系</a>
+      <span class="lang">
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="zh">中文</a>
+        <a href="#" data-lang="th">ไทย</a>
+      </span>
+    </nav>
+  </div>
+</header>
+<section class='section'><div class='container'>
+  <h1>关于 WTL 集团</h1>
+  <p class='small'>WTL 集团是一家全方位的物流服务提供商，专注于国际海运、空运、边境与陆运以及清关服务，并提供保税/非保税本地与跨省运输。我们与多家航空公司与船公司保持良好合作，能以具竞争力的价格帮助客户降本增效，确保合规运营。以客户为中心并结合深厚行业经验，我们为企业提供创新、具有成本效益的供应链解决方案。无论您需要全球运输、仓储配送或供应链管理，WTL 集团（WTL International Logistics Ltd）都是您值得信赖的合作伙伴。</p>
+  <h2>集团架构</h2>
+  <ul><li>WTL International Logistics Ltd — 成立于2009年 — 总部：深圳 — 分支：上海 / 中山 / 仰光（WTL（缅甸）国际物流有限公司）</li><li>PT World Track Logistik — 印尼雅加达</li><li>World Track Logistics (Thailand) Co., Ltd — 泰国曼谷</li></ul>
+  <p><em>“WTL CONNECT the WORLD for YOU”</em></p>
+</div></section><footer>
+  <div class="container">
+    <div>© <span id="year">2026</span> World Track Logistics (WTL). "Your World, Our Track".</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const path = location.pathname; // /en/about.html
+  const lang = path.split('/')[1] || 'en';
+  document.querySelectorAll('.lang a').forEach(a=>{
+    if(a.getAttribute('data-lang')===lang){a.classList.add('active');}
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = this.getAttribute('data-lang');
+      const page = path.split('/').pop();
+      const file = (!page || page==='') ? '' : page;
+      const dest = '/' + target + '/' + (file||'');
+      localStorage.setItem('wtl.lang', target);
+      location.href = dest;
+    });
+  });
+  const y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear()}
+})();
+</script>
+</body></html>

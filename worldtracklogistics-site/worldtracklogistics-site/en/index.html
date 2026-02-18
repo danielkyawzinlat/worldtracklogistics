@@ -1,0 +1,79 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>World Track Logistics | Freight Forwarding & Customs</title>
+<meta name='description' content='End‑to‑end logistics across ocean, air, land & customs. Competitive rates and dependable capacity.'>
+<link rel='canonical' href='https://www.worldtracklogistics.com/en/'>
+<link rel='alternate' href='/en/' hreflang='en'>
+<link rel='alternate' href='/zh/' hreflang='zh-cn'>
+<link rel='alternate' href='/th/' hreflang='th'>
+<link rel='stylesheet' href='/css/theme.css'>
+<link rel='manifest' href='/manifest.webmanifest'>
+<link rel='icon' type='image/png' sizes='32x32' href='/assets/icons/favicon-32.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='/assets/icons/favicon-16.png'>
+<link rel='apple-touch-icon' href='/assets/icons/apple-touch-icon.png'>
+<meta name='theme-color' content='#C46F2C'>
+</head><body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="/en/"><img src="/assets/images/logo.jpg" alt="WTL logo"></a>
+      <a class="name" href="/en/">World Track Logistics</a>
+    </div>
+    <nav>
+      <a href="/en/">Home</a>
+      <a href="/en/services.html">Services</a>
+      <a href="/en/solutions.html">Solutions</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/contact.html">Contact</a>
+      <span class="lang">
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="zh">中文</a>
+        <a href="#" data-lang="th">ไทย</a>
+      </span>
+    </nav>
+  </div>
+</header>
+<section class='hero'><div class='container wrap'>
+  <div>
+    <div class='kicker'>International Freight Forwarder</div>
+    <h1>Move cargo with confidence — ocean, air & land, end‑to‑end.</h1>
+    <p>From FCL/LCL to time‑critical air and bonded trucking, we design dependable door‑to‑door solutions with proactive communication.</p>
+    <div class='cta'>
+      <a class='btn primary' href='/en/contact.html'>Request a quote</a>
+      <a class='btn ghost' href='/en/services.html'>Explore services</a>
+    </div>
+  </div>
+  <div>
+    <img src='/assets/images/logo.jpg' alt='WTL logo'>
+  </div>
+</div></section><section class='section'><div class='container'><div class='grid-3'><div class='card'><h3>Ocean Freight</h3><p>FCL / LCL • Buyers’ consolidation • Breakbulk / OOG • Door‑to‑door</p></div><div class='card'><h3>Air Freight</h3><p>Express / deferred • Priority & charter • DG handling • Pre‑clearance</p></div><div class='card'><h3>Customs & Trucking</h3><p>Bonded / non‑bonded trucking • Cross‑border BKK–CN–MM • Warehousing & distribution</p></div></div></div></section>
+<section class='section'><div class='container' style='display:grid;grid-template-columns:1fr 1fr;gap:1.4rem'>
+  <div><h2>Why World Track Logistics</h2><ul><li>Carrier relationships for space during tight seasons</li><li>Transparent milestones and proactive exception handling</li><li>Door‑to‑door options including customs & final‑mile</li><li>Single point of contact with regional expertise</li></ul></div>
+  <div><h2>Industries we serve</h2><ul><li>Electronics & components</li><li>Fashion & retail</li><li>Automotive parts</li><li>Healthcare & PPE</li></ul></div>
+</div></section><footer>
+  <div class="container">
+    <div>© <span id="year">2026</span> World Track Logistics (WTL). "Your World, Our Track".</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const path = location.pathname; // /en/about.html
+  const lang = path.split('/')[1] || 'en';
+  document.querySelectorAll('.lang a').forEach(a=>{
+    if(a.getAttribute('data-lang')===lang){a.classList.add('active');}
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = this.getAttribute('data-lang');
+      const page = path.split('/').pop();
+      const file = (!page || page==='') ? '' : page;
+      const dest = '/' + target + '/' + (file||'');
+      localStorage.setItem('wtl.lang', target);
+      location.href = dest;
+    });
+  });
+  const y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear()}
+})();
+</script>
+</body></html>

@@ -1,0 +1,68 @@
+
+<!doctype html><html lang="th"><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>เกี่ยวกับเรา | World Track Logistics</title>
+<meta name='description' content='แนะนำกลุ่มบริษัท WTL และเครือข่าย: เซินเจิ้น เซี่ยงไฮ้ จงซาน ย่างกุ้ง กรุงเทพฯ และจาการ์ตา'>
+<link rel='canonical' href='https://www.worldtracklogistics.com/th/about.html'>
+<link rel='alternate' href='/en/' hreflang='en'>
+<link rel='alternate' href='/zh/' hreflang='zh-cn'>
+<link rel='alternate' href='/th/' hreflang='th'>
+<link rel='stylesheet' href='/css/theme.css'>
+<link rel='manifest' href='/manifest.webmanifest'>
+<link rel='icon' type='image/png' sizes='32x32' href='/assets/icons/favicon-32.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='/assets/icons/favicon-16.png'>
+<link rel='apple-touch-icon' href='/assets/icons/apple-touch-icon.png'>
+<meta name='theme-color' content='#C46F2C'>
+</head><body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="/th/"><img src="/assets/images/logo.jpg" alt="WTL logo"></a>
+      <a class="name" href="/th/">World Track Logistics</a>
+    </div>
+    <nav>
+      <a href="/th/">หน้าหลัก</a>
+      <a href="/th/services.html">บริการ</a>
+      <a href="/th/solutions.html">โซลูชัน</a>
+      <a href="/th/about.html">เกี่ยวกับเรา</a>
+      <a href="/th/contact.html">ติดต่อ</a>
+      <span class="lang">
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="zh">中文</a>
+        <a href="#" data-lang="th">ไทย</a>
+      </span>
+    </nav>
+  </div>
+</header>
+<section class='section'><div class='container'>
+  <h1>เกี่ยวกับกลุ่มบริษัท WTL</h1>
+  <p class='small'>WTL GROUP เป็นผู้ให้บริการโลจิสติกส์แบบครบวงจร ครอบคลุมการขนส่งทางเรือ ทางอากาศ และทางบก การผ่านพิธีการศุลกากร และการขนส่งแบบ Bonded/Non‑bonded เครือข่ายพันธมิตรกับสายการบินและสายเรือช่วยให้ได้อัตราค่าขนส่งที่แข่งขันได้ ลดต้นทุนและเพิ่มประสิทธิภาพให้ธุรกิจของคุณ พร้อมปฏิบัติตามกฎระเบียบทางการค้า เรามุ่งเน้นลูกค้า ผสานประสบการณ์ในอุตสาหกรรม เพื่อมอบโซลูชันโลจิสติกส์ที่คุ้มค่าและผลักดันการเติบโตของธุรกิจ ไม่ว่าคุณต้องการขนส่งระหว่างประเทศ คลังสินค้า กระจายสินค้า หรือการจัดการซัพพลายเชน WTL GROUP คือพาร์ตเนอร์ที่คุณไว้ใจได้</p>
+  <h2>โครงสร้างกลุ่มบริษัท</h2>
+  <ul><li>WTL International Logistics Ltd. — ก่อตั้งปี 2009 — สำนักงานใหญ่ (เซินเจิ้น จีน) — สาขา: เซี่ยงไฮ้ จงซาน ย่างกุ้ง (WTL (Myanmar) International Logistics Co., Ltd.)</li><li>PT World Track Logistik — จาการ์ตา อินโดนีเซีย</li><li>World Track Logistics (Thailand) Co., Ltd. — กรุงเทพฯ ประเทศไทย</li></ul>
+  <p><em>“WTL CONNECT the WORLD for YOU”</em></p>
+</div></section><footer>
+  <div class="container">
+    <div>© <span id="year">2026</span> World Track Logistics (WTL). "Your World, Our Track".</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const path = location.pathname; // /en/about.html
+  const lang = path.split('/')[1] || 'en';
+  document.querySelectorAll('.lang a').forEach(a=>{
+    if(a.getAttribute('data-lang')===lang){a.classList.add('active');}
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = this.getAttribute('data-lang');
+      const page = path.split('/').pop();
+      const file = (!page || page==='') ? '' : page;
+      const dest = '/' + target + '/' + (file||'');
+      localStorage.setItem('wtl.lang', target);
+      location.href = dest;
+    });
+  });
+  const y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear()}
+})();
+</script>
+</body></html>

@@ -1,0 +1,79 @@
+
+<!doctype html><html lang="zh"><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>World Track Logistics | 国际货运与清关</title>
+<meta name='description' content='端到端海陆空物流与清关服务，价格具竞争力，运力可靠。'>
+<link rel='canonical' href='https://www.worldtracklogistics.com/zh/'>
+<link rel='alternate' href='/en/' hreflang='en'>
+<link rel='alternate' href='/zh/' hreflang='zh-cn'>
+<link rel='alternate' href='/th/' hreflang='th'>
+<link rel='stylesheet' href='/css/theme.css'>
+<link rel='manifest' href='/manifest.webmanifest'>
+<link rel='icon' type='image/png' sizes='32x32' href='/assets/icons/favicon-32.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='/assets/icons/favicon-16.png'>
+<link rel='apple-touch-icon' href='/assets/icons/apple-touch-icon.png'>
+<meta name='theme-color' content='#C46F2C'>
+</head><body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="/zh/"><img src="/assets/images/logo.jpg" alt="WTL logo"></a>
+      <a class="name" href="/zh/">World Track Logistics</a>
+    </div>
+    <nav>
+      <a href="/zh/">首页</a>
+      <a href="/zh/services.html">服务</a>
+      <a href="/zh/solutions.html">方案</a>
+      <a href="/zh/about.html">关于我们</a>
+      <a href="/zh/contact.html">联系</a>
+      <span class="lang">
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="zh">中文</a>
+        <a href="#" data-lang="th">ไทย</a>
+      </span>
+    </nav>
+  </div>
+</header>
+<section class='hero'><div class='container wrap'>
+  <div>
+    <div class='kicker'>国际货运代理</div>
+    <h1>端到端海陆空物流，放心托付，准时交付。</h1>
+    <p>从整箱/拼箱到时效空运与保税/非保税卡车，我们为您设计可依赖的门到门方案，并提供主动沟通与异常处理。</p>
+    <div class='cta'>
+      <a class='btn primary' href='/zh/contact.html'>获取报价</a>
+      <a class='btn ghost' href='/zh/services.html'>查看服务</a>
+    </div>
+  </div>
+  <div>
+    <img src='/assets/images/logo.jpg' alt='WTL logo'>
+  </div>
+</div></section><section class='section'><div class='container'><div class='grid-3'><div class='card'><h3>海运</h3><p>FCL/LCL • 采购拼箱 • 特种/超限 • 门到门</p></div><div class='card'><h3>空运</h3><p>快件/普件 • 优先 & 包机 • 危险品 • 预清关</p></div><div class='card'><h3>报关与卡车</h3><p>保税/非保税运输 • 中泰中缅跨境 • 仓储与配送</p></div></div></div></section>
+<section class='section'><div class='container' style='display:grid;grid-template-columns:1fr 1fr;gap:1.4rem'>
+  <div><h2>选择 WTL 的理由</h2><ul><li>旺季舱位保障的承运人关系</li><li>清晰里程碑与主动异常处理</li><li>涵盖报关与末端配送的门到门服务</li><li>单一对接窗口与本地化团队</li></ul></div>
+  <div><h2>服务行业</h2><ul><li>电子元件</li><li>时尚零售</li><li>汽车零配件</li><li>医疗与防护用品</li></ul></div>
+</div></section><footer>
+  <div class="container">
+    <div>© <span id="year">2026</span> World Track Logistics (WTL). "Your World, Our Track".</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const path = location.pathname; // /en/about.html
+  const lang = path.split('/')[1] || 'en';
+  document.querySelectorAll('.lang a').forEach(a=>{
+    if(a.getAttribute('data-lang')===lang){a.classList.add('active');}
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = this.getAttribute('data-lang');
+      const page = path.split('/').pop();
+      const file = (!page || page==='') ? '' : page;
+      const dest = '/' + target + '/' + (file||'');
+      localStorage.setItem('wtl.lang', target);
+      location.href = dest;
+    });
+  });
+  const y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear()}
+})();
+</script>
+</body></html>
